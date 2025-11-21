@@ -1,0 +1,5 @@
+{
+  "name": "Nexus Enterprise Template",
+  "description": "A high-performance, multi-tenant enterprise React template featuring brutalist aesthetics similar to tsh.io, integrated with Google Gemini for AI-powered business insights.",
+  "requestFramePermissions": []
+}

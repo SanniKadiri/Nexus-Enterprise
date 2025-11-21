@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexus Enterprise | Modern SaaS Template</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['monospace'],
+            },
+            colors: {
+              brand: {
+                yellow: 'var(--brand-primary)', // Dynamic Theme Color
+                black: '#111111',
+                gray: '#F5F5F5',
+                darkGray: '#222222',
+                offWhite: '#FAFAFA'
+              }
+            },
+            animation: {
+              'marquee': 'marquee 25s linear infinite',
+              'reveal': 'reveal 0.8s cubic-bezier(0.77, 0, 0.175, 1) forwards',
+              'fade-in-up': 'fadeInUp 0.5s ease-out forwards',
+            },
+            keyframes: {
+              marquee: {
+                '0%': { transform: 'translateX(0%)' },
+                '100%': { transform: 'translateX(-100%)' },
+              },
+              reveal: {
+                '0%': { transform: 'translateY(100%)' },
+                '100%': { transform: 'translateY(0)' },
+              },
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      :root {
+        --brand-primary: #FFD600; /* Default Acme Yellow */
+      }
+
+      body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-color: #fff;
+        color: #111;
+      }
+      
+      /* Brutalist Scrollbar */
+      ::-webkit-scrollbar {
+        width: 12px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #fff;
+        border-left: 1px solid #eee;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #000;
+        border: 2px solid #fff;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--brand-primary);
+      }
+
+      /* Utility for text reveal masking */
+      .reveal-mask {
+        overflow: hidden;
+        display: block;
+      }
+      
+      .grid-bg {
+        background-size: 40px 40px;
+        background-image: linear-gradient(to right, #f0f0f0 1px, transparent 1px),
+                          linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
+      }
+
+      .hard-shadow {
+        box-shadow: 6px 6px 0px 0px #000000;
+      }
+      .hard-shadow-sm {
+        box-shadow: 3px 3px 0px 0px #000000;
+      }
+      
+      .hard-shadow-hover:hover {
+        transform: translate(-2px, -2px);
+        box-shadow: 8px 8px 0px 0px #000000;
+      }
+      
+      .hard-shadow-active:active {
+        transform: translate(2px, 2px);
+        box-shadow: 0px 0px 0px 0px #000000;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react-markdown": "https://aistudiocdn.com/react-markdown@^10.1.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
